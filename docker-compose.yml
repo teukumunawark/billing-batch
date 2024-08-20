@@ -1,0 +1,13 @@
+services:
+  postgresql:
+    container_name: batch-postgresql
+    image: postgres
+    environment:
+      POSTGRES_USER: mikasa
+      POSTGRES_PASSWORD: mikasa
+      PGDATA: /data/postgres
+    ports:
+      - "5432:5432"
+
+volumes:
+  postgres:

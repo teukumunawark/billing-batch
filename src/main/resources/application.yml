@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: billing-job
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: mikasa
+    password: mikasa
+  jpa:
+    show-sql: true
+    properties.hibernate:
+      format_sql: true
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: validate
+    generate-ddl: false
+    open-in-view: false
